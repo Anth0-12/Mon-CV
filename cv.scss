@@ -41,14 +41,14 @@ body {
                 text-decoration: none;
                 font-size: 150%;
                 font-weight: 500;
-                color: rgb(205, 161, 0);
+                color: rgb(0, 205, 113);
             }
         }
     }
 
     #scrollMenu {
         display: none; /* Hidden by default */
-        width: 12%;
+        width: 11%;
 
         position: fixed; /* Fixed/sticky position */
         top: 20px; /* Place the button at the bottom of the page */
@@ -58,7 +58,7 @@ body {
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
 
-        background-color: red; /* Set a background color */
+        background-color: rgb(0, 205, 113); /* Set a background color */
 
         cursor: pointer; /* Add a mouse pointer on hover */
   
@@ -66,6 +66,7 @@ body {
         border-radius: 4px;
 
         font-size: 120%; /* Increase font size */
+        font-weight: 500;
 
         .sideMenu {
             height: 20vh;
@@ -77,6 +78,7 @@ body {
             flex-direction: column;
 
             a {
+                height: 3vh;
                 text-decoration: none;
                 color: rgb(255, 255, 255);
             }
@@ -121,8 +123,8 @@ body {
                 
                 text-align: center;
                 
-                border-top: 10px solid rgb(205, 161, 0);
-                border-bottom: 10px solid rgb(205, 161, 0);
+                border-top: 10px solid rgb(0, 205, 113);
+                border-bottom: 10px solid rgb(0, 205, 113);
             }
 
             p {

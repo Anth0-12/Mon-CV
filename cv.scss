@@ -204,26 +204,23 @@ body {
                     }
 
                     .progress-bar {
-                        width: 200px;
+                        width: 40%;
                         height: 20px;
-
-                        margin: 0 37%;
-
-                        border: 1px solid #000;
-                        overflow: hidden;
-                    
-                        border-radius:50px;
-
+                        background-color: #eee;
+                        margin-bottom: 10px;
+                        position: relative;
+                        left: 30%;
+                        
                         .progress {
-                          width: 0;
                           height: 100%;
-                          background-color: #ff8400;
-                          border-radius:50px;
-                          transition: width 1s ease-out; /* Animation de transition sur la propriété 'width' pendant 1 seconde avec une fonction d'interpolation 'ease' */
+                          background-color: #4caf50;
+                          width: 0;
+                          transition: width 0.5s ease-in-out; /* Ajoute une transition de 0,5 seconde */
                         }
-                      }
-                    }
+                    }  
                 }
             }
         }
     }
+}
+

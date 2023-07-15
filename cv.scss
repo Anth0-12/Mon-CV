@@ -13,48 +13,37 @@ body {
     header {
         height: 10vh;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
 
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 10%;
 
         position: absolute;
         top: 0;
         z-index: 1000;
 
-        h1 {
-            width: 30%;
-            padding: 0vh 5%;
-
-            font-size: 170%;
-            font-weight: 500;
-            color: rgb(255, 0, 0);
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            text-align: center;
-        }
-
         .menu {
-            width: 60%;
+            height: 100%;
+            width: 50%;
             
             display: flex;
             align-items: center;
             justify-content: center;
 
             a {
-                padding: 0 20px;
+                padding: 10px 20px;
 
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
                 text-decoration: none;
-                font-size: 120%;
+                font-size: 150%;
                 font-weight: 500;
-                color: rgb(255, 255, 255);
+                color: rgb(205, 161, 0);
+
+                background-color: rgba(0, 0, 0, 0.5);
             }
         }
     }
@@ -107,40 +96,30 @@ body {
         background-size: cover;
 
         display: flex;
-        align-items: start;
+        align-items: center;
         justify-content: center;
-        flex-direction: column;
 
         gap: 25%;
 
         background-attachment: fixed;
 
         
-        .paragraphe {
-            height: auto;
-            width: 35%;
+        h1 {
+            width: 73%;
+            padding: 30px 0;
 
-            padding: 2% 0px;
+            font-size: 470%;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
 
             display: flex;
             align-items: center;
             justify-content: center;
 
-            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
 
-            p {
-                height: auto;
-                width: 90%;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-
-                color: rgb(0, 0, 0);
-                font-size: 150%;
-                font-weight: 500;
-            }
+            border-top: 10px solid rgb(205, 161, 0);
+            border-bottom: 10px solid rgb(205, 161, 0);
         }
     }
 

@@ -126,11 +126,19 @@ body {
             }
 
             p {
+                display: flex;
+                justify-content: end;
+
                 width: 73%;
 
-                font-size: 350%;
+                font-size: 250%;
                 font-weight: 500;
                 color: rgb(255, 255, 255);
+
+                span {
+                    font-weight: 700;
+                    color: rgb(255, 255, 255);
+                }
             }
         }
 

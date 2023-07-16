@@ -127,7 +127,7 @@ body {
                 border-bottom: 10px solid rgb(0, 205, 113);
             }
 
-            p {
+            p:first-of-type {
                 display: flex;
                 justify-content: end;
 
@@ -141,6 +141,22 @@ body {
                     font-weight: 700;
                     color: rgb(255, 255, 255);
                 }
+            }
+            p:last-of-type {
+                position: absolute;
+                top: 70vh;
+
+                display: flex;
+                justify-content: center;
+
+                max-width: 73%;
+                padding: 10px 20px;
+
+                font-size: 170%;
+                font-weight: 500;
+                color: rgb(255, 255, 255);
+
+                background-color: rgba(0, 0, 0, 0.5);
             }
         }
 

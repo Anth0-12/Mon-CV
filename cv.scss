@@ -146,17 +146,19 @@ body {
                 position: absolute;
                 top: 70vh;
 
-                display: flex;
-                justify-content: center;
-
                 max-width: 73%;
+                max-height: 40%;
                 padding: 10px 20px;
 
                 font-size: 170%;
                 font-weight: 500;
                 color: rgb(255, 255, 255);
 
-                background-color: rgba(0, 0, 0, 0.5);
+                // background-color: rgba(0, 0, 0, 0.5);
+
+                strong {
+                    color: rgb(0, 205, 113);
+                }
             }
         }
 

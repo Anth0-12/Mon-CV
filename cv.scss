@@ -41,7 +41,7 @@ body {
                 text-decoration: none;
                 font-size: 150%;
                 font-weight: 500;
-                color: rgb(0, 205, 113);
+                color: aquamarine;
             }
         }
     }
@@ -58,7 +58,7 @@ body {
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
 
-        background-color: rgb(0, 205, 113); /* Set a background color */
+        background-color: aquamarine; /* Set a background color */
 
         cursor: pointer; /* Add a mouse pointer on hover */
   
@@ -69,7 +69,7 @@ body {
         font-weight: 500;
 
         .sideMenu {
-            height: 20vh;
+            height: 23vh;
             width: 100%;
 
             display: flex;
@@ -80,10 +80,14 @@ body {
             a {
                 height: 3vh;
                 text-decoration: none;
-                color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
             }
         }
     }
+
+
+
+/*------------------------- presentation --------------------------------*/
 
     #presentation {
         height: 100vh;
@@ -110,10 +114,10 @@ body {
 
             
             h1 {
-                width: 73%;
+                width: 70%;
                 padding: 30px 0;
                 
-                font-size: 470%;
+                font-size: 450%;
                 font-weight: 500;
                 color: rgb(255, 255, 255);
                 
@@ -123,17 +127,17 @@ body {
                 
                 text-align: center;
                 
-                border-top: 10px solid rgb(0, 205, 113);
-                border-bottom: 10px solid rgb(0, 205, 113);
+                border-top: 10px solid aquamarine;
+                border-bottom: 10px solid aquamarine;
             }
 
             p:first-of-type {
                 display: flex;
                 justify-content: end;
 
-                width: 73%;
+                width: 70%;
 
-                font-size: 250%;
+                font-size: 200%;
                 font-weight: 500;
                 color: rgb(255, 255, 255);
 
@@ -146,26 +150,28 @@ body {
                 position: absolute;
                 top: 70vh;
 
-                max-width: 73%;
+                max-width: 70%;
                 max-height: 40%;
                 padding: 10px 20px;
 
-                font-size: 170%;
+                font-size: 150%;
                 font-weight: 500;
                 color: rgb(255, 255, 255);
 
                 // background-color: rgba(0, 0, 0, 0.5);
 
                 strong {
-                    color: rgb(0, 205, 113);
+                    color: aquamarine;
                 }
             }
-        }
-
-        
+        }   
     }
 
     
+
+/*------------------------- competences --------------------------------*/
+
+
     #competences {
         height: 100vh;
         width: 100%;
@@ -176,7 +182,7 @@ body {
         flex-direction: column;
         
         h2 {
-            width: 15%;
+            width: 14%;
             padding: 10px 0;
     
             position: absolute;
@@ -185,14 +191,14 @@ body {
     
             text-align: center;
     
-            font-size: 225%;
+            font-size: 200%;
             color: rgb(255, 255, 255);
     
-            border-top: 5px solid rgb(0, 205, 113);
-            border-bottom: 5px solid rgb(0, 205, 113);
+            border-top: 5px solid aquamarine;
+            border-bottom: 5px solid aquamarine;
         }
 
-        .colonnes {
+        .colonnes_comp {
             height: 100vh;
             width: 100%;
 
@@ -200,7 +206,7 @@ body {
             align-items: center;
             justify-content: center;
             
-            .col {
+            .col_comp {
                 height: 100%;
                 width: 50%;
 
@@ -227,7 +233,7 @@ body {
                         justify-content: center;
 
                         font-size: 150%;
-                        color: rgb(0, 205, 113);
+                        color: aquamarine;
                     }
 
                     .progress-bar {
@@ -253,11 +259,11 @@ body {
                 }  
             }
 
-            .col:nth-child(1) {
-                background-color: rgb(8, 8, 8);
+            .col_comp:nth-child(1) {
+                background-color: rgb(23, 23, 23);
                 div {
                     .progress-bar {
-                        background-color: rgb(18, 18, 18);
+                        background-color: rgb(10, 10, 10);
                     }
                 }
                 div:nth-child(1), div:nth-child(2) {
@@ -284,11 +290,11 @@ body {
                     }
                 }
             }
-            .col:nth-child(2) {
-                background-color: rgb(18, 18, 18);
+            .col_comp:nth-child(2) {
+                background-color: rgb(27, 27, 27);
                 div {
                     .progress-bar {
-                        background-color: rgb(8, 8, 8);
+                        background-color: rgb(10, 10, 10);
                     }
                 }
 
@@ -318,5 +324,96 @@ body {
             
         }
     }
+
+
+
+/*------------------------- experience --------------------------------*/
+
+
+    #experiences {
+        height: 100vh;
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        h2 {
+            width: 14%;
+            padding: 10px 0;
+
+            position: absolute;
+            bottom: -112%;
+            z-index: 100;
+
+            text-align: center;
+
+            font-size: 200%;
+            color: rgb(0, 0, 0);
+
+            border-top: 5px solid aquamarine;
+            border-bottom: 5px solid aquamarine;
+        }
+
+        .exp {
+            height: 100vh;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 5%;
+        
+            div {
+                height: 45%;
+                width: 40%;
+    
+                background-color: aquamarine;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    
+                gap: 2%;
+    
+                h3 {
+                    text-align: center;
+    
+                    font-size: 160%;
+                    color: rgb(0, 0, 0);
+    
+                    border-top: 3px solid rgb(255, 255, 255);
+                    border-bottom: 3px solid rgb(255, 255, 255);
+                }
+                p {
+                    max-width: 70%;
+                    max-height: 100%;
+                    padding: 10px 20px;
+    
+                    font-size: 130%;
+                    font-weight: 500;
+                    color: rgb(0, 0, 0);
+                }
+            }
+
+            div:nth-child(1) {
+                
+                h3 {
+                    padding: 5px 20px;
+                }
+            }
+            div:nth-child(2) {
+               
+                h3 {
+                    padding: 5px 20px;
+                }
+            }
+        } 
+    }
 }
+ 
 

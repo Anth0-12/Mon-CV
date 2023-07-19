@@ -58,7 +58,7 @@ body {
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
 
-        background-color: aquamarine; /* Set a background color */
+        background-color: rgb(38, 235, 169); /* Set a background color */
 
         cursor: pointer; /* Add a mouse pointer on hover */
   
@@ -67,6 +67,8 @@ body {
 
         font-size: 120%; /* Increase font size */
         font-weight: 500;
+
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 
         .sideMenu {
             height: 23vh;
@@ -182,8 +184,7 @@ body {
         flex-direction: column;
         
         h2 {
-            width: 14%;
-            padding: 10px 0;
+            padding: 10px 30px;
     
             position: absolute;
             bottom: -12%;
@@ -327,50 +328,53 @@ body {
 
 
 
-/*------------------------- experience --------------------------------*/
+/*------------------------- diplomes --------------------------------*/
 
-
-    #experiences {
-        height: 100vh;
+#diplomes {
+    height: 100vh;
         width: 100%;
         
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        background-color: aquamarine;
         
         h2 {
-            width: 14%;
-            padding: 10px 0;
+            padding: 10px 30px;
 
             position: absolute;
             bottom: -112%;
             z-index: 100;
-
+            
             text-align: center;
-
+            
             font-size: 200%;
             color: rgb(0, 0, 0);
 
-            border-top: 5px solid aquamarine;
-            border-bottom: 5px solid aquamarine;
+            border-top: 5px solid rgb(255, 255, 255);
+            border-bottom: 5px solid rgb(255, 255, 255);
         }
 
-        .exp {
-            height: 100vh;
+        .dip {
+            height: 90vh;
             width: 100%;
 
             display: flex;
             align-items: center;
             justify-content: center;
-
-            gap: 5%;
+            flex-direction: column;
+            
+            gap: 7%;
+            
+            margin-top: 5%;
         
             div {
-                height: 45%;
+                height: 23%;
                 width: 40%;
     
-                background-color: aquamarine;
+                background-color: white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -379,18 +383,18 @@ body {
                 box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
     
                 gap: 2%;
-    
+                
                 h3 {
                     text-align: center;
     
                     font-size: 160%;
                     color: rgb(0, 0, 0);
     
-                    border-top: 3px solid rgb(255, 255, 255);
-                    border-bottom: 3px solid rgb(255, 255, 255);
+                    border-top: 3px solid aquamarine;
+                    border-bottom: 3px solid aquamarine;
                 }
                 p {
-                    max-width: 70%;
+                    max-width: 90%;
                     max-height: 100%;
                     padding: 10px 20px;
     
@@ -412,8 +416,104 @@ body {
                     padding: 5px 20px;
                 }
             }
+            div:nth-child(3) {
+               
+                h3 {
+                    padding: 5px 20px;
+                }
+            }
         } 
     }
+
+
+
+
+/*------------------------- experience --------------------------------*/
+    
+    
+        #experiences {
+            height: 100vh;
+            width: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            h2 {
+                padding: 10px 30px;
+    
+                position: absolute;
+                bottom: -212%;
+                z-index: 100;
+    
+                text-align: center;
+    
+                font-size: 200%;
+                color: rgb(0, 0, 0);
+    
+                border-top: 5px solid aquamarine;
+                border-bottom: 5px solid aquamarine;
+            }
+    
+            .exp {
+                height: 100vh;
+                width: 100%;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                gap: 5%;
+            
+                div {
+                    height: 45%;
+                    width: 40%;
+        
+                    background-color: aquamarine;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+    
+                    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+        
+                    gap: 2%;
+        
+                    h3 {
+                        text-align: center;
+        
+                        font-size: 160%;
+                        color: rgb(0, 0, 0);
+        
+                        border-top: 3px solid rgb(255, 255, 255);
+                        border-bottom: 3px solid rgb(255, 255, 255);
+                    }
+                    p {
+                        max-width: 80%;
+                        max-height: 100%;
+                        padding: 10px 20px;
+        
+                        font-size: 130%;
+                        font-weight: 500;
+                        color: rgb(0, 0, 0);
+                    }
+                }
+    
+                div:nth-child(1) {
+                    
+                    h3 {
+                        padding: 5px 20px;
+                    }
+                }
+                div:nth-child(2) {
+                   
+                    h3 {
+                        padding: 5px 20px;
+                    }
+                }
+            } 
+        }
 }
  
 

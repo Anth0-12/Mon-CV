@@ -58,11 +58,11 @@ body {
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
 
-        background-color: rgb(38, 235, 169); /* Set a background color */
+        background: rgb(127,255,212);
+        background: linear-gradient(233deg, rgba(127,255,212,1) 0%, rgba(57,255,189,1) 39%);     /* Set a background color */
 
         cursor: pointer; /* Add a mouse pointer on hover */
   
-        border: 2px solid transparent;
         border-radius: 4px;
 
         font-size: 120%; /* Increase font size */
@@ -195,7 +195,7 @@ body {
             font-size: 200%;
             color: rgb(0, 0, 0);
     
-            border-top: 5px solid aquamarine;
+            border-top: 5px solid #7fffd4;
             border-bottom: 5px solid aquamarine;
         }
 
@@ -339,7 +339,8 @@ body {
         justify-content: center;
         flex-direction: column;
 
-        background-color: aquamarine;
+        background: rgb(127,255,212);
+        background: linear-gradient(60deg, rgba(127,255,212,1) 0%, rgba(53,255,187,1) 50%);        
         
         h2 {
             padding: 10px 30px;
@@ -470,7 +471,9 @@ body {
                     height: 45%;
                     width: 40%;
         
-                    background-color: aquamarine;
+                    background: rgb(127,255,212);
+                    background: linear-gradient(160deg, rgba(127,255,212,1) 0%, rgba(53,255,187,1) 70%);
+
                     display: flex;
                     align-items: center;
                     justify-content: center;

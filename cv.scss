@@ -183,24 +183,33 @@ body {
         justify-content: center;
         flex-direction: column;
         
-        h2 {
-            padding: 10px 30px;
-    
-            position: absolute;
-            bottom: -12%;
-            z-index: 100;
-    
-            text-align: center;
-    
-            font-size: 200%;
-            color: rgb(0, 0, 0);
-    
-            border-top: 5px solid #7fffd4;
-            border-bottom: 5px solid aquamarine;
+        .titre_h {
+            height: 10vh;
+            width: 20%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                padding: 10px 30px;
+        
+                position: absolute;
+                bottom: -12%;
+                z-index: 100;
+        
+                text-align: center;
+        
+                font-size: 200%;
+                color: rgb(0, 0, 0);
+        
+                border-top: 5px solid #7fffd4;
+                border-bottom: 5px solid aquamarine;
+            }
         }
 
         .colonnes_comp {
-            height: 100vh;
+            height: 90vh;
             width: 100%;
 
             display: flex;
@@ -261,7 +270,6 @@ body {
             }
 
             .col_comp:nth-child(1) {
-                background-color: rgb(255, 255, 255);
                 height: 80%;
                 div {
                     .progress-bar {
@@ -307,7 +315,7 @@ body {
                 }
             }
             .col_comp:nth-child(2) {
-                background-color: rgb(250, 250, 250);
+                
                 div {
                     gap: 5%;
                     .progress-bar {
@@ -376,7 +384,7 @@ body {
     background: rgb(127,255,212);
     background: linear-gradient(60deg, rgba(127,255,212,1) 0%, rgba(53,255,187,1) 50%);        
         
-        .titre {
+        .titre_v {
             height: 100vh;
             width: 25%;
 
@@ -482,24 +490,33 @@ body {
             justify-content: center;
             flex-direction: column;
             
-            h2 {
-                padding: 10px 30px;
+            .titre_h {
+                height: 10vh;
+                width: 20%;
     
-                position: absolute;
-                bottom: -212%;
-                z-index: 100;
-    
-                text-align: center;
-    
-                font-size: 200%;
-                color: rgb(0, 0, 0);
-    
-                border-top: 5px solid aquamarine;
-                border-bottom: 5px solid aquamarine;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h2 {
+                    padding: 10px 30px;
+        
+                    position: absolute;
+                    bottom: -212%;
+                    z-index: 100;
+        
+                    text-align: center;
+        
+                    font-size: 200%;
+                    color: rgb(0, 0, 0);
+        
+                    border-top: 5px solid aquamarine;
+                    border-bottom: 5px solid aquamarine;
+                }
             }
     
             .exp {
-                height: 100vh;
+                height: 90vh;
                 width: 100%;
     
                 display: flex;
@@ -577,7 +594,7 @@ body {
         background: rgb(127,255,212);
         background: linear-gradient(160deg, rgba(127,255,212,1) 0%, rgba(53,255,187,1) 70%);
         
-        .titre {
+        .titre_v {
             height: 100vh;
             width: 20%;
 
@@ -654,6 +671,134 @@ body {
                         height: 75%;
                         width: 80%;
         
+                        img {
+                            height: 100%;
+                            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+            }
+            
+
+            div:nth-child(1) {
+                
+                h3 {
+                    padding: 5px 20px;
+                }
+            }
+            div:nth-child(2) {
+            
+                h3 {
+                    padding: 5px 20px;
+                }
+            }
+        } 
+    }
+
+
+
+    /*------------------------- portfolio --------------------------------*/
+
+
+    #projet {
+        height: 100vh;
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        background: white;
+        
+        .titre_h {
+            height: 10vh;
+            width: 20%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                padding: 10px 30px;
+    
+                text-align: center;
+
+                position: absolute;
+                bottom: -412%;
+                z-index: 100;
+    
+                font-size: 200%;
+                color: rgb(0, 0, 0);
+    
+                border-top: 5px solid aquamarine;
+                border-bottom: 5px solid aquamarine;
+            }
+        }
+
+        .proj {
+            height: 90vh;
+            width: 80%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                height: 100%;
+                width: 40%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                gap: 5%;
+
+                div {
+                    height: 40%;
+                    width: 100%;
+    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    gap: 4%;
+    
+                   .sous-titre {
+                        height: 20%;
+                        width: 40%;
+                        
+                        background-color: white;
+    
+                        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
+                        background: rgb(127,255,212);
+                        background: linear-gradient(160deg, rgba(127,255,212,1) 0%, rgba(53,255,187,1) 70%);
+    
+                       .lien {
+                           text-decoration: none;
+                           text-align: center;
+
+                           padding: 5px 20px;
+    
+                           font-size: 130%;
+                           font-weight: 700;
+                           color: rgb(0, 0, 0);
+    
+                           border-top: 3px solid white;
+                           border-bottom: 3px solid white;
+                       }
+                    }
+                    .affiche {
+                        height: 75%;
+                        width: 80%;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
                         img {
                             height: 100%;
                             box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);

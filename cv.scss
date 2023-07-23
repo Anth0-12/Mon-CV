@@ -10,7 +10,7 @@ body {
     height: 200vh;
     width: 100%;
 
-    header {
+    #header {
         height: 10vh;
         width: 100%;
 
@@ -919,7 +919,7 @@ main {
 
                         background-color: aquamarine;
                         border: none;
-                        border-radius: 5px;
+                        border-radius: 3px;
 
                         font-size: 80%;
                         font-weight: 500;
@@ -944,4 +944,173 @@ main {
     }
 }
 
+#travaux {
+    
+    display: none;
+}
 
+/*!----------------------------- MEDIA QUERIES --------------------------------*/
+
+@media only screen and (min-width: 1367px) and ( max-width: 1900px) {
+body {
+    height: auto;
+    #header, main, #contact {
+      display: none;
+    }
+    #scrollMenu, .sideMenu {
+        visibility: hidden;
+    }
+
+    #travaux {
+        height: 100vh;
+        width: 100%;
+            
+        font-size: 200%;
+        font-weight: 500;
+        color: black;
+
+        background-color: #ffee00;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url(/img/grue.png);
+        background-position: 82%;
+        background-repeat: no-repeat;
+        background-size: 20%;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1024px) and ( max-width: 1366px) and ( orientation: portrait) {
+body {
+    height: auto;
+    #header, main, #contact {
+      display: none;
+    }
+    #scrollMenu, .sideMenu {
+        visibility: hidden;
+    }
+
+    #travaux {
+        height: 100vh;
+        width: 100%;
+            
+        font-size: 170%;
+        font-weight: 500;
+        color: black;
+
+        background-color: #ffee00;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url(/img/grue.png);
+        background-position: 86%;
+        background-repeat: no-repeat;
+        background-size: 15%;
+    }
+  }
+
+}
+@media only screen and (min-width: 1024px) and ( max-width: 1366px) and ( orientation: landscape) {
+body {
+    height: auto;
+    #header, main, #contact {
+      display: none;
+    }
+    #scrollMenu, .sideMenu {
+        visibility: hidden;
+    }
+
+    #travaux {
+        height: 100vh;
+        width: 100%;
+            
+        font-size: 200%;
+        font-weight: 500;
+        color: black;
+
+        background-color: #ffee00;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url(/img/grue.png);
+        background-position: 85%;
+        background-repeat: no-repeat;
+        background-size: 15%;
+    }
+  }
+
+}
+
+
+@media only screen and (min-width: 360px) and ( max-width: 844px) and ( orientation: portrait) {
+body {
+    height: auto;
+    #header, main, #contact {
+      display: none;
+    }
+    #scrollMenu, .sideMenu {
+        visibility: hidden;
+    }
+
+    #travaux {
+        height: 100vh;
+        width: 100%;
+            
+        font-size: 100%;
+        font-weight: 500;
+        color: black;
+
+        background-color: #ffee00;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url(/img/grue.png);
+        background-position: 50% 45%;
+        background-repeat: no-repeat;
+        background-size: 15%;
+    }
+  }
+
+}
+@media only screen and (min-width: 360px) and ( max-width: 844px) and ( orientation: landscape) {
+body {
+    height: auto;
+    #header, main, #contact {
+      display: none;
+    }
+    #scrollMenu, .sideMenu {
+        visibility: hidden;
+    }
+
+    #travaux {
+        height: 100vh;
+        width: 100%;
+            
+        font-size: 100%;
+        font-weight: 500;
+        color: black;
+
+        background-color: #ffee00;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url(/img/grue.png);
+        background-position: 50% 33%;
+        background-repeat: no-repeat;
+        background-size: 10%;
+    }
+  }
+
+}

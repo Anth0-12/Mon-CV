@@ -10,7 +10,9 @@ window.onscroll = function() {apparationFunction()};
 function apparationFunction() {
   if (document.body.scrollTop > 85 || document.documentElement.scrollTop > 85) {
     menuTel.style.display = "block";
+    menuTel.style.opacity = "1";
   } else {
     menuTel.style.display = "none";
+    menuTel.style.opacity = "0";
   }
 };

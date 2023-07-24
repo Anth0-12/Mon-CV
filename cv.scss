@@ -47,6 +47,7 @@
 
         }
 
+        
     #menuTel {
         visibility: hidden;
         display: none;
@@ -148,6 +149,7 @@
               display: flex;
             }
     }
+
     
         #scrollMenu {
             display: none; /* Hidden by default */
@@ -1184,7 +1186,12 @@ body {
         }
         #menuTel {
             visibility: visible;
+            opacity: 1;
+
+            transition: opacity 1s;
         }
+
+      
     
     
         #scrollMenu {     

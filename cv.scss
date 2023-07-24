@@ -7,7 +7,7 @@
     }
     
     body {
-        height: 200vh;
+        height: auto;
         width: 100%;
     
         #header {
@@ -408,6 +408,9 @@
                     writing-mode: vertical-rl;
                     text-orientation: upright;
                 }
+            }
+            .titre_v_r {
+                display: none;
             }
     
             .dip {
@@ -1052,39 +1055,531 @@ body {
 }
 
 
-@media only screen and (min-width: 320px) and ( max-width: 844px) and ( orientation: portrait) {
-body {
-    height: auto;
-    #header, main, #contact {
-      display: none;
+@media only screen and (min-width: 320px) and ( max-width: 844px) and ( orientation: portrait) { /* telephone */
+    * {
+        margin: 0;
+        padding: 0;
+    
+        font-family: 'Poppins', sans-serif;
+        line-height: 130%;
     }
-    #scrollMenu, .sideMenu {
-        visibility: hidden;
-    }
+    
+    body {
+    
+        #header {
+    
+            .menu {
+             
+                width: 100%;
 
+                flex-wrap: wrap;
+    
+                a {
+                    font-size: 100%;
+                }
+            }
+        }
+    
+        #scrollMenu {
+            display: none; /* Hidden by default */
+            width: 11%;
+
+            visibility: hidden;  /*---*/
+    
+            position: fixed; /* Fixed/sticky position */
+            top: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 1000; /* Make sure it does not overlap */
+    
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+    
+            background: rgb(127,255,212);
+            background: linear-gradient(233deg, rgba(127,255,212,1) 0%, rgba(57,255,189,1) 39%);     /* Set a background color */
+    
+            cursor: pointer; /* Add a mouse pointer on hover */
+      
+            border-radius: 4px;
+    
+            font-size: 120%; /* Increase font size */
+            font-weight: 500;
+    
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    
+            .sideMenu {
+                height: 23vh;
+                width: 100%;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+    
+                a {
+                    height: 3vh;
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+    
+    
+    
+    /*------------------------- presentation --------------------------------*/
+    main {
+    
+        #presentation {
+            height: 93vh; /*---*/
+    
+            .background {
+                
+                h1 {
+                    position: relative; /*---*/
+                    bottom: 70px; /*---*/
+
+                    width: 80%; /*---*/
+                    padding: 20px 0; /*---*/
+                    
+                    font-size: 180%; /*---*/
+                
+                    border-top: 5px solid aquamarine; /*---*/
+                    border-bottom: 5px solid aquamarine; /*---*/
+                }
+    
+                p:first-of-type {
+                    position: relative;  /*---*/
+                    bottom: 70px;      /*---*/
+    
+                    width: 80%; /*---*/
+    
+                    font-size: 100%;   /*---*/
+                    font-weight: 400;
+                    color: rgb(255, 255, 255);
+    
+                    span {
+                        font-weight: 700;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+                p:last-of-type {
+                    position: absolute;
+                    top: 50vh;       /*---*/
+    
+                    max-width: 80%;  /*---*/
+    
+                    font-size: 90%;   /*---*/
+                }
+            }   
+        }
+    
+        
+    
+    /*------------------------- competences --------------------------------*/
+    
+    
+        #competences {
+            height: 100vh;
+            width: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            .titre_h {
+                height: 10vh;
+                width: 20%;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                h2 {
+                    position: absolute;
+                    bottom: -18%; /*---*/
+                    z-index: 100;
+            
+                    font-size: 120%; /*---*/
+            
+                    border-top: 3px solid #7fffd4; /*---*/
+                    border-bottom: 3px solid aquamarine; /*---*/
+                }
+            }
+    
+            .colonnes_comp {
+                height: 95vh; /*---*/
+                
+                .col_comp {
+    
+                    div {
+    
+                        p {
+                            font-size: 100%; /*---*/
+                        }
+    
+                        .progress-bar {
+                            width: 80%; /*---*/
+    
+                            position: relative;
+                            left: 10%; /*---*/ 
+                        }
+                    }  
+                }
+            }
+        }
+    
+    
+    
+    /*------------------------- diplomes --------------------------------*/
+    
+    #diplomes {       
+            height: 100vh;
+
+            flex-direction: column;
+            .titre_v {
+                display: none;
+            }
+            .titre_v_r {
+                display:  flex;
+                height: 10vh;
+                width: 100%;
+
+                justify-content: center;
+
+                h2 { 
+                    padding: 10px 30px; /*---*/
+
+                    position: absolute;
+                    bottom: -126%; /*---*/
+                    z-index: 100;
+        
+                    font-size: 120%;  /*---*/
+        
+                    border-top: 3px solid rgb(255, 255, 255); /*---*/
+                    border-bottom: 3px solid rgb(255, 255, 255); /*---*/
+                    border-left: none; /*---*/
+                    border-right: none; /*---*/
+        
+                    writing-mode:inherit; /*---*/
+
+                }
+            }
+    
+            .dip {
+                height: 90vh; 
+                width: 75%; /*---*/
+                
+                gap: 2%; /*---*/
+            
+                div {
+                    width: 85%; /*---*/
+        
+                    gap: 2%; /*---*/
+                    
+                    h3 {
+                        font-size: 110%; /*---*/
+                    }
+                    p {
+                        font-size: 90%; /*---*/
+                    }
+                }
+    
+                div:nth-child(1) {
+                    height: 22%; /*---*/
+                }
+                div:nth-child(2) {
+                    height: 22%; /*---*/
+                }
+                div:nth-child(3) {
+                    height: 32%; /*---*/
+                }
+            } 
+        }
+    
+    
+    
+    
+    /*------------------------- experience --------------------------------*/
+        
+        
+            #experiences {
+                
+                .titre_h {
+    
+                    h2 {
+                        position: absolute;
+                        bottom: -234%; /*---*/
+                        z-index: 100;
+            
+                        font-size: 120%; /*---*/
+            
+                        border-top: 3px solid aquamarine; /*---*/
+                        border-bottom: 3px solid aquamarine; /*---*/
+                    }
+                }
+        
+                .exp {
+                    flex-direction: column; /*---*/
+        
+                    gap: 5%;
+                
+                    div {
+                        height: 40%; /*---*/
+                        width: 80%; /*---*/
+            
+                        h3 {
+                            text-align: center;
+            
+                            font-size: 90%; /*---*/
+                            font-weight: 600; /*---*/
+                        }
+                        p {
+                            font-size: 80%; /*---*/
+
+                        }
+                    }
+        
+                    div:nth-child(1) {
+                        height: 30%; /*---*/
+                    }
+                    div:nth-child(2) {
+                        height: 45%; /*---*/
+                    }
+                } 
+            }
+    
+    
+    
+    
+    
+    /*------------------------- hobbies --------------------------------*/
+    
+    
+        #hobby {
+            height: 120vh; /*---*/
+
+            flex-direction: column; /*---*/
+            
+            .titre_v {
+                height: 10vh; /*---*/
+
+                justify-content: center; /*---*/
+    
+                h2 {
+                    padding: 10px 30px; /*---*/
+
+                    position: absolute;
+                    bottom: -340%; /*---*/
+                    z-index: 100;
+        
+                    font-size: 120%; /*---*/
+        
+                    border-top: 3px solid rgb(255, 255, 255); /*---*/
+                    border-bottom: 3px solid rgb(255, 255, 255); /*---*/
+                    border-left: none; /*---*/
+                    border-right: none; /*---*/
+        
+                    writing-mode:inherit; /*---*/
+                }
+            }
+    
+            .hob {
+                height: 100vh; /*---*/
+                width: 80%; /*---*/
+
+                flex-direction: column; /*---*/
+    
+                div {
+                    height: 50%; /*---*/
+                    width: 100%; /*---*/
+
+                    flex-direction: column; /*---*/
+    
+                    gap: 0%; /*---*/
+    
+                    div {
+                        height: 50%; /*---*/
+                        width: 60%; /*---*/
+
+                        flex-direction: column; /*---*/
+    
+                        gap: 5%; /*---*/
+        
+                       .sous-titre {
+                            height: 30%; /*---*/
+                            width: 100%; /*---*/
+        
+                           h3 {
+                               text-align: center;
+        
+                               font-size: 100%; /*---*/
+                               font-weight: 600; /*---*/
+                           }
+                        }
+                        .affiche {
+                            height: 50%; /*---*/
+                            width: 90%; /*---*/
+            
+                            img {
+                                height: 100%; /*---*/
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    
+    
+    
+        /*------------------------- portfolio --------------------------------*/
+    
+    
+        #projet {
+            height: 120vh; /*---*/
+
+            flex-direction: column; /*---*/
+            
+            .titre_h {
+    
+                h2 {
+                    padding: 10px 30px; /*---*/
+
+                    position: absolute;
+                    bottom: -470%; /*---*/
+                    z-index: 100;
+        
+                    font-size: 120%; /*---*/
+        
+                    border-top: 3px solid aquamarine; /*---*/
+                    border-bottom: 3px solid aquamarine; /*---*/
+                }
+            }
+    
+            .proj {
+                height: 100vh; /*---*/
+                width: 80%; /*---*/
+
+                flex-direction: column; /*---*/
+    
+                div {
+                    height: 50%; /*---*/
+                    width: 100%; /*---*/
+
+                    flex-direction: column; /*---*/
+    
+                    gap: 0%; /*---*/
+    
+                    div {
+                        height: 50%; /*---*/
+                        width: 60%; /*---*/
+
+                        flex-direction: column; /*---*/
+    
+                        gap: 5%; /*---*/
+        
+                       .sous-titre {
+                        height: 30%; /*---*/
+                        width: 100%; /*---*/
+        
+                           .lien {
+                               text-align: center;
+        
+                               font-size: 100%; /*---*/
+                               font-weight: 600; /*---*/
+                           }
+                        }
+                        .affiche {
+                            height: 50%; /*---*/
+                            width: 90%; /*---*/
+
+                            img {
+                                 height: 100%; /*---*/
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    
+    
+    
+        /*------------------------- contact-footer --------------------------------*/
+    
+        #contact {
+            height: 100vh; /*---*/
+
+            flex-direction: column; /*---*/
+    
+            .titre_h {
+                height: 10vh; /*---*/
+                width: 20%; /*---*/
+    
+                h2 {
+                    position: absolute;
+                    bottom: -600%; /*---*/
+        
+                    font-size: 120%; /*---*/
+                    color: aquamarine; /*---*/
+        
+                    border-top: 3px solid white; /*---*/
+                    border-bottom: 3px solid white; /*---*/
+                }
+            }
+    
+            .cont {
+                height: 90vh; /*---*/
+                width: 95%; /*---*/
+    
+                display: flex; /*---*/
+                align-items: center; /*---*/
+                justify-content: center; /*---*/
+                flex-direction: column; /*---*/
+                gap: 2%; /*---*/
+    
+                div {
+                    height: 15%; /*---*/
+                    max-width: 80%; /*---*/
+    
+                    gap: 5%; /*---*/
+        
+                    h3 {
+                        padding: 5px 20px; /*---*/
+    
+                        font-size: 90%; /*---*/
+                        font-weight: 500; /*---*/
+    
+                        border-top: 2px solid #7fffd4; /*---*/
+                        border-bottom: 2px solid aquamarine; /*---*/
+                        }
+                    p {
+                        font-size: 80%; /*---*/
+                    }
+    
+                    a {        
+                        font-size: 80%; /*---*/
+    
+                        button {
+                            width: 120%; /*---*/
+    
+                            font-size: 80%; /*---*/
+ 
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+    
     #travaux {
-        height: 100vh;
-        width: 100%;
-            
-        font-size: 100%;
-        font-weight: 500;
-        color: black;
-
-        background-color: #ffee00;
-            
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-image: url(/img/grue.png);
-        background-position: 50% 45%;
-        background-repeat: no-repeat;
-        background-size: 15%;
+        
+        display: none;
     }
-  }
-
 }
-@media only screen and (min-width: 320px) and ( max-width: 844px) and ( orientation: landscape) {
+
+
+@media only screen and (min-width: 320px) and ( max-width: 844px) and ( orientation: landscape) { /* telephone */
 body {
     height: auto;
     #header, main, #contact {

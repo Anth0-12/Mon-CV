@@ -1080,47 +1080,8 @@ body {
             }
         }
     
-        #scrollMenu {
-            display: none; /* Hidden by default */
-            width: 11%;
-
+        #scrollMenu {     
             visibility: hidden;  /*---*/
-    
-            position: fixed; /* Fixed/sticky position */
-            top: 20px; /* Place the button at the bottom of the page */
-            right: 30px; /* Place the button 30px from the right */
-            z-index: 1000; /* Make sure it does not overlap */
-    
-            border: none; /* Remove borders */
-            outline: none; /* Remove outline */
-    
-            background: rgb(127,255,212);
-            background: linear-gradient(233deg, rgba(127,255,212,1) 0%, rgba(57,255,189,1) 39%);     /* Set a background color */
-    
-            cursor: pointer; /* Add a mouse pointer on hover */
-      
-            border-radius: 4px;
-    
-            font-size: 120%; /* Increase font size */
-            font-weight: 500;
-    
-            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-    
-            .sideMenu {
-                height: 23vh;
-                width: 100%;
-    
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-    
-                a {
-                    height: 3vh;
-                    text-decoration: none;
-                    color: rgb(0, 0, 0);
-                }
-            }
         }
     
     
@@ -1178,21 +1139,8 @@ body {
     
     
         #competences {
-            height: 100vh;
-            width: 100%;
-            
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
             
             .titre_h {
-                height: 10vh;
-                width: 20%;
-    
-                display: flex;
-                align-items: center;
-                justify-content: center;
     
                 h2 {
                     position: absolute;
@@ -1218,6 +1166,7 @@ body {
                         }
     
                         .progress-bar {
+                            height: 15px; /*---*/
                             width: 80%; /*---*/
     
                             position: relative;

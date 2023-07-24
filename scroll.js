@@ -14,9 +14,3 @@ function scrollFunction() {
     bouton.style.display = "none";
   }
 }
-
-// Quand l'utilisateur clique sur le bouton le scroll s'active pour revenir tout en haut de la page
-function topFunction() {
-  document.body.scrollTop = 0; // Pour safari
-  document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
-}

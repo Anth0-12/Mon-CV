@@ -725,95 +725,239 @@
             display: flex;
             align-items: center;
             justify-content: center;
-    
+
             background: rgb(127,255,212);
             background: linear-gradient(160deg, rgba(127,255,212,1) 0%, rgba(53,255,187,1) 70%);
-            
-            .titre_v {
-                height: 100vh;
-                width: 20%;
     
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-    
-                h2 {
-                    padding: 10px 30px;
-        
-                    text-align: center;
-        
-                    font-size: 300%;
-                    color: rgb(0, 0, 0);
-        
-                    border-left: 5px solid rgb(255, 255, 255);
-                    border-right: 5px solid rgb(255, 255, 255);
-        
-                    writing-mode: vertical-rl;
-                    text-orientation: upright;
-                }
+    .titre_v {
+        height: 100vh;
+        width: 20%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        h2 {
+            padding: 10px 30px;
+
+            text-align: center;
+
+            font-size: 300%;
+            color: rgb(0, 0, 0);
+
+            border-left: 5px solid rgb(255, 255, 255);
+            border-right: 5px solid rgb(255, 255, 255);
+
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+    }
+
+    .hob {
+        height: 99vh;
+        width: 80%;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5%;
+        grid-auto-rows: 45%;
+        align-items: center;
+        justify-content: center;
+
+            .carre_un {
+                grid-column: 1 / 2;
+                grid-row: 1;
             }
-    
-            .hob {
-                height: 100vh;
-                width: 80%;
-    
+
+            .carre_deux {
+                grid-column: 2 / 3;
+                grid-row: 1;
+            }
+
+            .carre_trois {
+                grid-column: 1 / 2;
+                grid-row: 2;
+            }
+
+            .carre_quatre {
+                grid-column: 2 / 3;
+                grid-row: 2;
+            }
+
+            div {
+                width: 100%;
+                height: 100%;
+
                 display: flex;
                 align-items: center;
                 justify-content: center;
-    
-                div {
-                    height: 100%;
-                    width: 40%;
-    
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-    
-                    gap: 5%;
-    
-                    div {
-                        height: 40%;
-                        width: 100%;
+                flex-direction: column;
+
+                gap: 4%;
+
+                .sous-titre {
+                     height: 20%;
+                     width: 40%;
+ 
+                    h3 {
+                        text-align: center;
+ 
+                        font-size: 140%;
+                        color: rgb(0, 0, 0);
+ 
+                        border-top: 3px solid rgb(255, 255, 255);
+                        border-bottom: 3px solid rgb(255, 255, 255);
+                    }
+                 }
+                 .affiche {
+                     height: 75%;
+                     width: 80%;
+     
+                     img {
+                         height: 100%;
+                         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+                     }
+                 }
+
+                }
+            }
+        }
         
+
+        div:nth-child(1) {
+            
+            h3 {
+                padding: 5px 20px;
+            }
+        }
+        div:nth-child(2) {
+        
+            h3 {
+                padding: 5px 20px;
+            }
+        }
+    
+    
+    
+        /*------------------------- portfolio --------------------------------*/
+    
+    
+        #projet {
+            height: 145vh;
+            width: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+
+            background: rgb(255, 255, 255);
+    
+            .titre_h {
+                height: 10vh;
+                width: 20%;
+        
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h2 {
+                    padding: 10px 30px;
+            
+                    position: relative;
+                    top: 20%;
+                    z-index: 10;
+            
+                    text-align: center;
+            
+                    font-size: 180%;
+                    color: rgb(0, 0, 0);
+            
+                    border-top: 5px solid aquamarine;
+                    border-bottom: 5px solid aquamarine;
+                }
+            }
+
+            .proj {
+                height: 90vh;
+                width: 80%;
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 5%;
+                grid-auto-rows: 45%;
+                align-items: center;
+                justify-content: center;
+
+                    .carre_un {
+                        grid-column: 1 / 2;
+                        grid-row: 1;
+                    }
+
+                    .carre_deux {
+                        grid-column: 2 / 3;
+                        grid-row: 1;
+                    }
+
+                    .carre_trois {
+                        grid-column: 1 / 2;
+                        grid-row: 2;
+                    }
+
+                    .carre_quatre {
+                        grid-column: 2 / 3;
+                        grid-row: 2;
+                    }
+                    .carre_cinq {
+                        grid-column: 1 / 2;
+                        grid-row: 3;
+                    }
+
+                    div {
+                        width: 100%;
+                        height: 100%;
+
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         flex-direction: column;
-    
+
                         gap: 4%;
-        
-                       .sous-titre {
+
+                        .sous-titre {
                             height: 20%;
                             width: 40%;
                             
-                            background-color: white;
         
-                            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+                            h3 {
+                                text-align: center;
         
-                           h3 {
-                               text-align: center;
+                                font-size: 140%;
+                                color: rgb(0, 0, 0);
         
-                               font-size: 140%;
-                               color: rgb(0, 0, 0);
-        
-                               border-top: 3px solid aquamarine;
-                               border-bottom: 3px solid aquamarine;
-                           }
+                                border-top: 3px solid aquamarine;
+                                border-bottom: 3px solid aquamarine;
+                            }   
                         }
                         .affiche {
                             height: 75%;
                             width: 80%;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
             
                             img {
                                 height: 100%;
                                 box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
                             }
                         }
+
+                        }
                     }
                 }
                 
-    
+
                 div:nth-child(1) {
                     
                     h3 {
@@ -826,122 +970,6 @@
                         padding: 5px 20px;
                     }
                 }
-            } 
-        }
-    
-    
-    
-        /*------------------------- portfolio --------------------------------*/
-    
-    
-        #projet {
-            height: 100vh;
-            width: 100%;
-            
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-    
-            background: white;
-            
-            .titre_h {
-                height: 10vh;
-                width: 20%;
-    
-                display: flex;
-                align-items: center;
-                justify-content: center;
-    
-                h2 {
-                    padding: 10px 30px;
-        
-                    text-align: center;
-    
-                    position: relative;
-                    top: 80%;
-                    z-index: 10;
-
-                    font-size: 180%;
-                    color: rgb(0, 0, 0);
-        
-                    border-top: 5px solid #7fffd4;
-                    border-bottom: 5px solid aquamarine;
-                }
-            }
-    
-            .proj {
-                height: 90vh;
-                width: 80%;
-    
-                display: flex;
-                align-items: center;
-                justify-content: center;
-    
-                div {
-                    height: 100%;
-                    width: 40%;
-    
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-    
-                    gap: 5%;
-    
-                    div {
-                        height: 40%;
-                        width: 100%;
-        
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-    
-                        gap: 4%;
-        
-                       .sous-titre {
-                            height: 20%;
-                            width: 40%;
-                            
-                            background-color: white;
-        
-                            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-    
-                            background: rgb(127,255,212);
-                            background: linear-gradient(160deg, rgba(127,255,212,1) 0%, rgba(53,255,187,1) 70%);
-        
-                           .lien {
-                               text-decoration: none;
-                               text-align: center;
-    
-                               padding: 5px 20px;
-        
-                               font-size: 130%;
-                               font-weight: 700;
-                               color: rgb(0, 0, 0);
-        
-                               border-top: 3px solid white;
-                               border-bottom: 3px solid white;
-                           }
-                        }
-                        .affiche {
-                            height: 75%;
-                            width: 80%;
-    
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-    
-                            img {
-                                height: 100%;
-                                box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
-                            }
-                        }
-                    }
-                }
-            } 
-        }
     }
     
     
